@@ -1,6 +1,7 @@
 package com.example.application.views.sobre;
 
 import com.example.application.views.MainLayout;
+import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.html.Paragraph;
@@ -18,19 +19,19 @@ public class SobreView extends VerticalLayout {
     public SobreView() {
         setSpacing(false);
 
-        Image img = new Image("images/empty-plant.png", "placeholder plant");
-        img.setWidth("200px");
-        add(img);
+        Div logoContainer = new Div();
 
+        Image img = new Image("images/ProjetoALlogo.png", "Projeto AL logo");
+        
         H2 header = new H2("This place intentionally left empty");
         header.addClassNames(Margin.Top.XLARGE, Margin.Bottom.MEDIUM);
-        add(header);
-        add(new Paragraph("It’s a place where you can grow your own UI 🤗"));
 
         setSizeFull();
-        setJustifyContentMode(JustifyContentMode.CENTER);
-        setDefaultHorizontalComponentAlignment(Alignment.CENTER);
+        setDefaultHorizontalComponentAlignment(Alignment.AUTO);
         getStyle().set("text-align", "center");
+        logoContainer.add(img, header);
+
+        add(logoContainer);
     }
 
 }
