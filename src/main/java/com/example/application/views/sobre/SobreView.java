@@ -4,7 +4,6 @@ import com.example.application.views.MainLayout;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Image;
-import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
@@ -23,7 +22,7 @@ public class SobreView extends VerticalLayout {
 
         Image img = new Image("images/ProjetoALlogo.png", "Projeto AL logo");
         
-        H2 header = new H2("This place intentionally left empty");
+        H2 header = new H2("coisa do arruda q ele mudou");
         header.addClassNames(Margin.Top.XLARGE, Margin.Bottom.MEDIUM);
 
         setSizeFull();
