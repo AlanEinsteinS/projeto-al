@@ -2,6 +2,9 @@ package com.example.application.views;
 
 import org.vaadin.lineawesome.LineAwesomeIcon;
 
+import com.example.application.views.remier.RemierRPGView;
+import com.example.application.views.remier.RemierSubView1;
+import com.example.application.views.remier.RemierSubView2;
 import com.example.application.views.jujutsu.JujutsuRPGView;
 import com.example.application.views.jujutsu.JujutsuSubView1;
 import com.example.application.views.jujutsu.JujutsuSubView2;
@@ -59,6 +62,12 @@ public class MainLayout extends AppLayout {
 
         // Sobre
         nav.addItem(new SideNavItem("Sobre", SobreView.class, LineAwesomeIcon.CAMPGROUND_SOLID.create()));
+
+        // Remier RPG
+        SideNavItem remierRPG = new SideNavItem("Remier RPG", RemierRPGView.class, LineAwesomeIcon.PENCIL_RULER_SOLID.create());
+        remierRPG.addItem(new SideNavItem("Sub-item 1", RemierSubView1.class));
+        remierRPG.addItem(new SideNavItem("Sub-item 2", RemierSubView2.class));
+        nav.addItem(remierRPG);
 
         // Jujutsu RPG
         SideNavItem jujutsuRPG = new SideNavItem("Jujutsu RPG", JujutsuRPGView.class, LineAwesomeIcon.PENCIL_RULER_SOLID.create());
