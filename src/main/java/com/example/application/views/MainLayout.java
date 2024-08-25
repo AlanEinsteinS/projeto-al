@@ -1,6 +1,16 @@
 package com.example.application.views;
 
-import com.example.application.views.myview.MyViewView;
+import org.vaadin.lineawesome.LineAwesomeIcon;
+
+import com.example.application.views.jujutsu.JujutsuRPGView;
+import com.example.application.views.jujutsu.JujutsuSubView1;
+import com.example.application.views.jujutsu.JujutsuSubView2;
+import com.example.application.views.mashlee.MashLeeRPGView;
+import com.example.application.views.mashlee.MashLeeSubView1;
+import com.example.application.views.mashlee.MashLeeSubView2;
+import com.example.application.views.kimetsu.Kimetsu3077RPGView;
+import com.example.application.views.kimetsu.KimetsuSubView1;
+import com.example.application.views.kimetsu.KimetsuSubView2;
 import com.example.application.views.sobre.SobreView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -13,11 +23,7 @@ import com.vaadin.flow.component.sidenav.SideNav;
 import com.vaadin.flow.component.sidenav.SideNavItem;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.theme.lumo.LumoUtility;
-import org.vaadin.lineawesome.LineAwesomeIcon;
 
-/**
- * The main view is a top-level placeholder for other views.
- */
 public class MainLayout extends AppLayout {
 
     private H1 viewTitle;
@@ -51,8 +57,26 @@ public class MainLayout extends AppLayout {
     private SideNav createNavigation() {
         SideNav nav = new SideNav();
 
+        // Sobre
         nav.addItem(new SideNavItem("Sobre", SobreView.class, LineAwesomeIcon.CAMPGROUND_SOLID.create()));
-        nav.addItem(new SideNavItem("My View", MyViewView.class, LineAwesomeIcon.PENCIL_RULER_SOLID.create()));
+
+        // Jujutsu RPG
+        SideNavItem jujutsuRPG = new SideNavItem("Jujutsu RPG", JujutsuRPGView.class, LineAwesomeIcon.PENCIL_RULER_SOLID.create());
+        jujutsuRPG.addItem(new SideNavItem("Sub-item 1", JujutsuSubView1.class));
+        jujutsuRPG.addItem(new SideNavItem("Sub-item 2", JujutsuSubView2.class));
+        nav.addItem(jujutsuRPG);
+
+        // MashLee RPG
+        SideNavItem mashLeeRPG = new SideNavItem("MashLee RPG", MashLeeRPGView.class, LineAwesomeIcon.GAMEPAD_SOLID.create());
+        mashLeeRPG.addItem(new SideNavItem("Sub-item 1", MashLeeSubView1.class));
+        mashLeeRPG.addItem(new SideNavItem("Sub-item 2", MashLeeSubView2.class));
+        nav.addItem(mashLeeRPG);
+
+        // Kimetsu 3077 RPG
+        SideNavItem kimetsuRPG = new SideNavItem("Kimetsu 3077 RPG", Kimetsu3077RPGView.class, LineAwesomeIcon.GAMEPAD_SOLID.create());
+        kimetsuRPG.addItem(new SideNavItem("Sub-item 1", KimetsuSubView1.class));
+        kimetsuRPG.addItem(new SideNavItem("Sub-item 2", KimetsuSubView2.class));
+        nav.addItem(kimetsuRPG);
 
         return nav;
     }
