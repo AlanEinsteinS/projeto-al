@@ -11,7 +11,7 @@ import com.vaadin.flow.router.RouteAlias;
 import com.vaadin.flow.theme.lumo.LumoUtility.Margin;
 
 @PageTitle("Sobre")
-@Route(value = "so!!!!!bre", layout = MainLayout.class)
+@Route(value = "SOBRE", layout = MainLayout.class)
 @RouteAlias(value = "", layout = MainLayout.class)
 public class SobreView extends VerticalLayout {
 
