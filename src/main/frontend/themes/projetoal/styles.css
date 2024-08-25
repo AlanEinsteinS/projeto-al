@@ -1,0 +1,31 @@
+@import url('./main-layout.css');
+@import url('./views/my-view-view.css');
+@import url('@fontsource/roboto-mono/index.css');    html {
+      --lumo-shade: hsl(214, 0%, 82%);
+      --lumo-shade-5pct: hsla(214, 0%, 82%, 0.05);
+      --lumo-shade-10pct: hsla(214, 0%, 82%, 0.1);
+      --lumo-shade-20pct: hsla(214, 0%, 82%, 0.2);
+      --lumo-shade-30pct: hsla(214, 0%, 82%, 0.3);
+      --lumo-shade-40pct: hsla(214, 0%, 82%, 0.4);
+      --lumo-shade-50pct: hsla(214, 0%, 82%, 0.5);
+      --lumo-shade-60pct: hsla(214, 0%, 82%, 0.6);
+      --lumo-shade-70pct: hsla(214, 0%, 82%, 0.7);
+      --lumo-shade-80pct: hsla(214, 0%, 82%, 0.8);
+      --lumo-shade-90pct: hsla(214, 0%, 82%, 0.9);
+      --lumo-base-color: #1a1a1a;
+      --lumo-primary-color: hsl(204, 100%, 50%);
+      --lumo-primary-color-50pct: hsla(204, 100%, 50%, 0.5);
+      --lumo-primary-color-10pct: hsla(204, 100%, 50%, 0.1);
+      --lumo-primary-text-color: hsl(214, 100%, 99%);
+      --lumo-body-text-color: hsla(214, 0%, 68%, 0.94);
+      --lumo-error-text-color: hsl(3, 100%, 24%);
+      --lumo-success-text-color: hsl(145, 32%, 66%);
+      --lumo-success-color: hsl(145, 32%, 66%);
+      --lumo-success-color-50pct: hsla(145, 32%, 66%, 0.5);
+      --lumo-success-color-10pct: hsla(145, 32%, 66%, 0.1);
+      --lumo-error-color: hsl(3, 100%, 24%);
+      --lumo-error-color-50pct: hsla(3, 100%, 24%, 0.5);
+      --lumo-error-color-10pct: hsla(3, 100%, 24%, 0.1);
+--lumo-font-family: Roboto Mono;
+
+    }
