@@ -59,10 +59,11 @@ public class RemierRPGView extends VerticalLayout {
         additionalInfoSection.add(additionalInfoHeader, additionalInfo, communityInfo);
         add(additionalInfoSection);
 
-        // Adiciona um botão bonito no final
-        Button actionButton = new Button("Saiba Mais");
+        // Adiciona um botão bonito no final com funcionalidade de redirecionamento
+        Button actionButton = new Button("Participe dessa Comunidade");
         actionButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY); // Estilo bonito do botão
         actionButton.addClassNames(LumoUtility.Margin.Top.LARGE);
+        actionButton.addClickListener(event -> getUI().ifPresent(ui -> ui.getPage().open("https://discord.gg/r7FafJT8", "_blank")));
         add(actionButton);
 
         // Define o alinhamento padrão dos componentes
