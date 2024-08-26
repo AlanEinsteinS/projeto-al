@@ -2,25 +2,25 @@ package com.example.application.views;
 
 import org.vaadin.lineawesome.LineAwesomeIcon;
 
-import com.example.application.views.remier.RemierRPGView;
-import com.example.application.views.remier.RemierSubView1;
-import com.example.application.views.remier.RemierSubView2;
 import com.example.application.views.jujutsu.JujutsuRPGView;
 import com.example.application.views.jujutsu.JujutsuSubView1;
 import com.example.application.views.jujutsu.JujutsuSubView2;
-import com.example.application.views.mashlee.MashLeeRPGView;
-import com.example.application.views.mashlee.MashLeeSubView1;
-import com.example.application.views.mashlee.MashLeeSubView2;
 import com.example.application.views.kimetsu.Kimetsu3077RPGView;
 import com.example.application.views.kimetsu.KimetsuSubView1;
 import com.example.application.views.kimetsu.KimetsuSubView2;
+import com.example.application.views.mashlee.MashLeeRPGView;
+import com.example.application.views.mashlee.MashLeeSubView1;
+import com.example.application.views.mashlee.MashLeeSubView2;
+import com.example.application.views.remier.RemierRPGView;
+import com.example.application.views.remier.RemierSubView1;
+import com.example.application.views.remier.RemierSubView2;
 import com.example.application.views.sobre.SobreView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Footer;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.Header;
-import com.vaadin.flow.component.html.Span;
+import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.orderedlayout.Scroller;
 import com.vaadin.flow.component.sidenav.SideNav;
 import com.vaadin.flow.component.sidenav.SideNavItem;
@@ -48,9 +48,13 @@ public class MainLayout extends AppLayout {
     }
 
     private void addDrawerContent() {
-        Span appName = new Span("Projeto: AL");
-        appName.addClassNames(LumoUtility.FontWeight.SEMIBOLD, LumoUtility.FontSize.LARGE);
-        Header header = new Header(appName);
+        // Adicionar a logo do projeto
+        Image logo = new Image("https://cdn.discordapp.com/attachments/720826976163594280/1277373537128022129/ProjetoALlogo_3.png?ex=66ccee4f&is=66cb9ccf&hm=c74c6f1305e6dce7310536d0325acc3e21906c8943e853369bf5af5b66c4ff89&", "Projeto AL logo");
+        logo.setWidth("150px");
+        logo.addClassNames("project-logo");
+
+        // Adicionar logo e nome ao header
+        Header header = new Header(logo);
 
         Scroller scroller = new Scroller(createNavigation());
 

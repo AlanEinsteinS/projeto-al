@@ -5,7 +5,7 @@ import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.component.textfield.TextArea;
+import com.vaadin.flow.component.richtexteditor.RichTextEditor;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteAlias;
@@ -18,45 +18,40 @@ public class SobreView extends VerticalLayout {
 
     public SobreView() {
         setSpacing(false);
+        setPadding(false);
+        setAlignItems(Alignment.CENTER); // Centraliza todo o conteúdo
 
         // Container para o logo
         Div logoContainer = new Div();
 
         // Logo do Projeto AL
         Image img = new Image("https://cdn.discordapp.com/attachments/720826976163594280/1277373537128022129/ProjetoALlogo_3.png?ex=66ccee4f&is=66cb9ccf&hm=c74c6f1305e6dce7310536d0325acc3e21906c8943e853369bf5af5b66c4ff89&", "Projeto AL logo");
-        img.setWidth("200px");
+        img.setWidth("600px");
         logoContainer.add(img);
-        logoContainer.getStyle().set("margin-left", "20px"); // Pequena margem à esquerda
         add(logoContainer);
 
         // Seção: Quem somos?
         H2 quemSomosHeader = new H2("Quem somos?");
-        quemSomosHeader.addClassNames(Margin.Top.LARGE, Margin.Bottom.MEDIUM);
+        quemSomosHeader.addClassNames(Margin.Top.SMALL, Margin.Bottom.SMALL);
         add(quemSomosHeader);
 
-        // TextArea de descrição: Quem somos? (somente leitura)
-        TextArea quemSomosTextArea = new TextArea();
-        quemSomosTextArea.setWidth("800px");
-        quemSomosTextArea.setLabel("Descrição");
-        quemSomosTextArea.setValue("Somos uma equipe dedicada ao desenvolvimento de soluções inovadoras e criativas para o mundo do RPG.");
-        quemSomosTextArea.setReadOnly(true); // Somente leitura
-        add(quemSomosTextArea);
+        // RichTextEditor de descrição: Quem somos? (somente leitura)
+        RichTextEditor quemSomosRichText = new RichTextEditor();
+        quemSomosRichText.setWidth("800px");
+        quemSomosRichText.setValue("Prazer eu sou o Alan sendo o cara que deu a ideia de inicio do projeto tenho 17 anos e sou um iniciante em progamação procurando evoluir.");
+        quemSomosRichText.setReadOnly(true);
+        add(quemSomosRichText);
 
         // Seção: Por que fizemos o Projeto: AL?
         H2 porqueFizemosHeader = new H2("Por que fizemos o Projeto: AL?");
         porqueFizemosHeader.addClassNames(Margin.Top.LARGE, Margin.Bottom.MEDIUM);
         add(porqueFizemosHeader);
 
-        // TextArea de descrição: Por que fizemos o Projeto: AL? (somente leitura)
-        TextArea porqueFizemosTextArea = new TextArea();
-        porqueFizemosTextArea.setWidth("800px");
-        porqueFizemosTextArea.setLabel("Descrição");
-        porqueFizemosTextArea.setValue("O Project: AL foi criado para fornecer uma ferramenta poderosa para mestres de RPG e jogadores que desejam expandir suas aventuras.");
-        porqueFizemosTextArea.setReadOnly(true); // Somente leitura
-        add(porqueFizemosTextArea);
-
-        // Estilização adicional para alinhar o conteúdo à esquerda
-        getStyle().set("margin-left", "20px"); // Pequena margem à esquerda
-        setWidthFull(); // Largura total do componente
+        // RichTextEditor de descrição: Por que fizemos o Projeto: AL? (somente leitura)
+        RichTextEditor porqueFizemosRichText = new RichTextEditor();
+        porqueFizemosRichText.setWidth("800px");
+        porqueFizemosRichText.setValue("O Project: AL foi criado com o objetivo de oferecer uma plataforma inovadora e robusta para mestres de RPG e jogadores que buscam levar suas aventuras a um novo patamar. Com ferramentas personalizáveis e recursos avançados, o Project: AL permite a criação de mundos complexos e narrativas envolventes, proporcionando uma experiência imersiva tanto para iniciantes quanto para veteranos no universo dos RPGs. Nosso objetivo é reunir todas as comunidades de RPG em um único local, facilitando a troca de ideias, a colaboração em campanhas e a criação de uma rede forte e unida de jogadores e mestres. Além disso, fornecemos diversos sistemas para que cada grupo possa escolher aquele que melhor se adapta ao seu estilo de jogo, garantindo que todos possam desfrutar de uma experiência rica e personalizada.");
+        porqueFizemosRichText.setReadOnly(true);
+        add(porqueFizemosRichText);
     }
 }

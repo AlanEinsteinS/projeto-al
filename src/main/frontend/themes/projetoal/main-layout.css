@@ -17,4 +17,17 @@ vaadin-side-nav-item vaadin-icon {
 
 [slot="drawer"]:is(header, footer):is(:empty) {
   display: none;
+
+  .project-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header span {
+    position: relative;
+    margin-left: 160px; /* Ajuste conforme necessário */
+}
+
 }
