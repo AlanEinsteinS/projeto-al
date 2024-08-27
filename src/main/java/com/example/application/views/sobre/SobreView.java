@@ -18,7 +18,7 @@ public class SobreView extends VerticalLayout {
 
     public SobreView() {
         setSpacing(false);
-        setPadding(false);
+        setPadding(true);
         setAlignItems(Alignment.CENTER); // Centraliza todo o conteúdo
 
         // Container para o logo
@@ -26,7 +26,8 @@ public class SobreView extends VerticalLayout {
 
         // Logo do Projeto AL
         Image img = new Image("images/projetologo.png", "Projeto AL logo");
-        img.setWidth("600px");
+        img.setWidth("100%");
+        img.addClassName("responsive-logo");
         logoContainer.add(img);
         add(logoContainer);
 
@@ -37,7 +38,8 @@ public class SobreView extends VerticalLayout {
 
         // RichTextEditor de descrição: Quem somos? (somente leitura)
         RichTextEditor quemSomosRichText = new RichTextEditor();
-        quemSomosRichText.setWidth("800px");
+        quemSomosRichText.setWidthFull();
+        quemSomosRichText.setMaxWidth("800px");
         quemSomosRichText.setValue("Prazer eu sou o Alan sendo o cara que deu a ideia de inicio do projeto tenho 17 anos e sou um iniciante em progamação procurando evoluir.");
         quemSomosRichText.setReadOnly(true);
         add(quemSomosRichText);
@@ -49,7 +51,8 @@ public class SobreView extends VerticalLayout {
 
         // RichTextEditor de descrição: Por que fizemos o Projeto: AL? (somente leitura)
         RichTextEditor porqueFizemosRichText = new RichTextEditor();
-        porqueFizemosRichText.setWidth("800px");
+        porqueFizemosRichText.setWidthFull();
+        porqueFizemosRichText.setMaxWidth("800px");
         porqueFizemosRichText.setValue("O Project: AL foi criado com o objetivo de oferecer uma plataforma inovadora e robusta para mestres de RPG e jogadores que buscam levar suas aventuras a um novo patamar. Com ferramentas personalizáveis e recursos avançados, o Project: AL permite a criação de mundos complexos e narrativas envolventes, proporcionando uma experiência imersiva tanto para iniciantes quanto para veteranos no universo dos RPGs. Nosso objetivo é reunir todas as comunidades de RPG em um único local, facilitando a troca de ideias, a colaboração em campanhas e a criação de uma rede forte e unida de jogadores e mestres. Além disso, fornecemos diversos sistemas para que cada grupo possa escolher aquele que melhor se adapta ao seu estilo de jogo, garantindo que todos possam desfrutar de uma experiência rica e personalizada.");
         porqueFizemosRichText.setReadOnly(true);
         add(porqueFizemosRichText);
