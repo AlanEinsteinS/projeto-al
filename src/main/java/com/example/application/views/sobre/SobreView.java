@@ -25,7 +25,7 @@ public class SobreView extends VerticalLayout {
         Div logoContainer = new Div();
 
         // Logo do Projeto AL
-        Image img = new Image("images/ProjetoALlogo.png", "Projeto AL logo");
+        Image img = new Image("images/projetologo.png", "Projeto AL logo");
         img.setWidth("600px");
         logoContainer.add(img);
         add(logoContainer);

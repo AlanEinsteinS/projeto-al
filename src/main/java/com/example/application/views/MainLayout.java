@@ -49,7 +49,7 @@ public class MainLayout extends AppLayout {
 
     private void addDrawerContent() {
         // Adicionar a logo do projeto
-        Image logo = new Image("images/ProjetoALlogo.png", "Projeto AL logo");
+        Image logo = new Image("images/projetologo.png", "Projeto AL logo");
         logo.setWidth("150px");
         logo.addClassNames("project-logo");
 
