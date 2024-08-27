@@ -49,7 +49,7 @@ public class MainLayout extends AppLayout {
 
     private void addDrawerContent() {
         // Adicionar a logo do projeto
-        Image logo = new Image("https://cdn.discordapp.com/attachments/720826976163594280/1277373537128022129/ProjetoALlogo_3.png?ex=66ccee4f&is=66cb9ccf&hm=c74c6f1305e6dce7310536d0325acc3e21906c8943e853369bf5af5b66c4ff89&", "Projeto AL logo");
+        Image logo = new Image("images/ProjetoALlogo.png", "Projeto AL logo");
         logo.setWidth("150px");
         logo.addClassNames("project-logo");
 
