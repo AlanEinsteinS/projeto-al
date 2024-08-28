@@ -65,8 +65,8 @@ public class RemierSubView2 extends Composite<VerticalLayout> {
         // Nomes dos botões
         String[] buttonNames = {
             "Agatha v0.4 Homebrew", "Protocolos de Energia v0.1 Homebrew", "Ordo Caos Homebrew", "Misterios do Outro Lado Homebrew", "Kimi's(0.5) Homebrew",
-            "Jujutsu Kaisen OP(2.0) Homebrew", "Eduard Homebrews", "REDSKIN HOMEBREW 🦧", "MAINVIC(3.1) HOMEBREW 🎇", "Mega(0.2) Homebrew",
-            "Expansão de Medo(2.0) Homebrew", "Elemento Vacuo (0.6) Homebrew", "Edição Expansiva versão 0.3", "A Contemplação do Outro"
+            "Jujutsu Kaisen OP(2.0) Homebrew", "Eduard Homebrew", "REDSKIN HOMEBREW 🦧", "MAINVIC(3.1) HOMEBREW 🎇", "Mega(0.2) Homebrew",
+            "Expansão de Medo(2.0) Homebrew", "Elemento Vacuo (0.6) Homebrew", "Edição Expansiva(0.3) Homebrew", "A Contemplação do Outro Lado Homebrew"
         };
 
         for (int i = 0; i < buttonNames.length; i++) {
