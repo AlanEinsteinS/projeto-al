@@ -70,7 +70,7 @@ public class MainLayout extends AppLayout {
         // Remier RPG
         SideNavItem remierRPG = new SideNavItem("Remier RPG", RemierRPGView.class, LineAwesomeIcon.PENCIL_RULER_SOLID.create());
         remierRPG.addItem(new SideNavItem("Inicio e Sistema", RemierSubView1.class));
-        remierRPG.addItem(new SideNavItem("Sub-item 2", RemierSubView2.class));
+        remierRPG.addItem(new SideNavItem("Livros e Homebrews", RemierSubView2.class));
         nav.addItem(remierRPG);
 
         // Jujutsu RPG
