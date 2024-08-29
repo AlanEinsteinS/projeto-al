@@ -160,6 +160,12 @@ rules.add(new Rule("Multiplicador", "O dano é multiplicado pelo multiplicador d
 
 rules.add(new Rule("Imunidade", "Alguns seres são imunes a acertos críticos, sofrendo apenas o dano normal do ataque."));
 
+rules.add(new Rule("RITUAIS - CUSTO", "1° Circulo = 2PE<br>" +
+"2° Circulo = 3PE<br>" +
+"3° Circulo = 6PE<br>" +
+"4° Circulo = 10PE<br>" +
+"5° Circulo = ???"));
+
 rules.add(new Rule("INICIATIVA", "Teste de Iniciativa: Cada jogador faz um teste no início do combate. O mestre faz um teste para todos os inimigos, usando o menor bônus de Iniciativa se houver variação. Quem obtém os resultados mais altos age primeiro. Em caso de empate, rola-se novamente entre os empatados para desempatar."));
 
 rules.add(new Rule("Tipos de Ações", "Ação Padrão: Realiza uma tarefa principal, como atacar ou conjurar um ritual.<br>" +
