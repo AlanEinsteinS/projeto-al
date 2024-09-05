@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@fontsource/roboto-mono": "^5.0.19",
+    "@fontsource/roboto-mono": "4.5.0",
     "@polymer/polymer": "3.5.1",
     "@vaadin/bundles": "24.4.5",
     "@vaadin/common-frontend": "0.0.19",
@@ -84,7 +84,7 @@
       "workbox-core": "7.1.0",
       "workbox-precaching": "7.1.0"
     },
-    "hash": "3895f0c961497b5fc52337af903ddf978a44e8476f083caeffc24f31f5f4e846"
+    "hash": "495220b259079db0e880b13709a506b63bf58b1e69fe88e736eb8e1f98c9b5fc"
   },
   "type": "module",
   "overrides": {
@@ -95,7 +95,6 @@
     "@vaadin/vaadin-usage-statistics": "$@vaadin/vaadin-usage-statistics",
     "@vaadin/react-components": "$@vaadin/react-components",
     "@vaadin/react-components-pro": "$@vaadin/react-components-pro",
-    "@fontsource/roboto-mono": "$@fontsource/roboto-mono",
     "@vaadin/common-frontend": "$@vaadin/common-frontend",
     "react-dom": "$react-dom",
     "construct-style-sheets-polyfill": "$construct-style-sheets-polyfill",
@@ -107,6 +106,7 @@
     "proj4": "$proj4",
     "@vaadin/vaadin-themable-mixin": "$@vaadin/vaadin-themable-mixin",
     "@vaadin/vaadin-lumo-styles": "$@vaadin/vaadin-lumo-styles",
-    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles"
+    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles",
+    "@fontsource/roboto-mono": "$@fontsource/roboto-mono"
   }
 }

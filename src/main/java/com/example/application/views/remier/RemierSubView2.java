@@ -5,6 +5,7 @@ import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
+import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -41,11 +42,13 @@ public class RemierSubView2 extends Composite<VerticalLayout> {
         );
 
         // Layout para as abas
-        VerticalLayout homebrewTabContent = new VerticalLayout();
-        homebrewTabContent.setAlignItems(FlexComponent.Alignment.CENTER);
-        homebrewTabContent.setPadding(false);
-        homebrewTabContent.setSpacing(true); // Adiciona espaçamento entre os botões
-        homebrewTabContent.setWidth("100%"); // Garante que o conteúdo use toda a largura disponível
+        Div homebrewTabContent = new Div();
+        homebrewTabContent.getStyle().set("display", "grid");
+        homebrewTabContent.getStyle().set("grid-template-columns", "repeat(auto-fit, minmax(350px, 1fr))");
+        homebrewTabContent.getStyle().set("gap", "20px");
+        homebrewTabContent.getStyle().set("align-items", "center");
+        homebrewTabContent.getStyle().set("justify-content", "center");
+        homebrewTabContent.setWidth("100%");
 
         // Cores mais escuras para os botões secundários
         String[] buttonColors = {
