@@ -3,9 +3,8 @@ package com.example.application.views.solo.monarcagrids;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.grid.GridVariant; // Correto import para GridVariant
 import com.vaadin.flow.component.html.H3;
-import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.theme.lumo.LumoUtility; // Utilitários Lumo para estilos
+import com.vaadin.flow.theme.lumo.LumoUtility;
 
 public class MonarcaSombrasGrid extends VerticalLayout {
 
@@ -36,13 +35,15 @@ public class MonarcaSombrasGrid extends VerticalLayout {
 
         // Define o nome do monarca com estilização
         H3 monarcaSombrasTitle = new H3("Monarca das Sombras");
-        monarcaSombrasTitle.addClassNames(LumoUtility.FontSize.XXLARGE, LumoUtility.TextAlign.CENTER); // Centraliza o título
-        monarcaSombrasTitle.getStyle().set("color", "#4B0082");
+        monarcaSombrasTitle.addClassNames(LumoUtility.FontSize.XXLARGE); // Tamanho do texto
+        monarcaSombrasTitle.getStyle().set("color", "#4B0082"); // Cor do título
+        monarcaSombrasTitle.getStyle().set("text-align", "center"); // Centraliza o título
 
-        // Layout do título
-        HorizontalLayout titleLayout = new HorizontalLayout(monarcaSombrasTitle);
-        titleLayout.setJustifyContentMode(JustifyContentMode.CENTER); // Centraliza horizontalmente
-        titleLayout.setWidthFull();
+        // Adiciona o título ao layout
+        add(monarcaSombrasTitle);
+    
+
+
 
         // Cria o grid para o Monarca das Sombras
         Grid<String[]> monarcaSombrasGrid = new Grid<>();
@@ -64,6 +65,8 @@ public class MonarcaSombrasGrid extends VerticalLayout {
         setAlignItems(Alignment.CENTER);
 
         // Adiciona o título e o Grid ao layout
-        add(titleLayout, monarcaSombrasGrid);
-    }
+        add(monarcaSombrasTitle, monarcaSombrasGrid);
+
+}
+
 }

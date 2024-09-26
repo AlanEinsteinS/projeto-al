@@ -14,7 +14,6 @@ import com.example.application.views.remier.RemierSubView2;
 import com.example.application.views.sobre.SobreView;
 import com.example.application.views.solo.SoloLevelingRPGView;
 import com.example.application.views.solo.SoloLevelingSubView1;
-import com.example.application.views.solo.SoloLevelingSubView2;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Footer;
@@ -82,7 +81,6 @@ public class MainLayout extends AppLayout {
         // Jujutsu RPG
         SideNavItem mashLeeRPG = new SideNavItem("Solo Leveling RPG", SoloLevelingRPGView.class, LineAwesomeIcon.GAMEPAD_SOLID.create());
         mashLeeRPG.addItem(new SideNavItem("Inicio e Sistema", SoloLevelingSubView1.class));
-        mashLeeRPG.addItem(new SideNavItem("Sub-item 2", SoloLevelingSubView2.class));
         nav.addItem(mashLeeRPG);
 
         // Kimetsu 3077 RPG
